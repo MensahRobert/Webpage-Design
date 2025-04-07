@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="#">Quiz Application</a></h1>
+            <ul>
+                <li><a href="#quiz">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="quiz">
+        <section class="quiz-container">
+            <h2>Webpage Design Quiz</h2>
+            <p class="instructions">Instructions: Choose the correct answer from the options provided. Each question is worth one point.</p>
+            <form id="quiz-form" aria-label="Quiz Form">
+                <!-- Questions will be injected dynamically here -->
+            </form>
+            <button id="submit-btn" aria-label="Submit Quiz">Submit</button>
+            <div id="result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <section>
+            <h2>About this Quiz</h2>
+            <p>This quiz is designed to test your knowledge of webpage design fundamentals, including HTML, CSS, and JavaScript principles.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at <a href="mailto:support@quizapp.com">support@quizapp.com</a>.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* Reset some default CSS properties */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px; /* Added margin as per the new requirement */
+}
+
+/* University Header with logo and text */
+.uni-header {
+    background-color: #002f4b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    gap: 20px;
+}
+
+.uni-logo {
+    height: 100px;
+    width: auto;
+}
+
+.uni-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.uni-details h2,
+.uni-details h3,
+.uni-details h4,
+.uni-details p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.uni-details h2 {
+    font-size: 1.5rem;
+}
+
+.uni-details h3 {
+    font-size: 1.2rem;
+}
+
+.uni-details h4 {
+    font-size: 1.1rem;
+}
+
+.uni-details p {
+    font-size: 0.95rem;
+}
+
+/* Header Navigation */
+header {
+    background-color: #004d7f;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 20px; /* Updated padding for consistency */
+    border-radius: 10px; /* Updated border radius for aesthetics */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.quiz-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #004d7f;
+}
+
+.instructions {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+/* Question Styling */
+.question {
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    display: block;
+    margin: 10px 0; /* Updated margin for consistency */
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#submit-btn {
+    background-color: #ffcc00; /* Primary button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #e6b800; /* Change on hover */
+}
+
+/* Result Styling */
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004d7f;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer section {
+    margin-bottom: 2rem;
+}
+
+footer h2 {
+    margin-bottom: 0.5rem;
+}
+
+footer p a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #submit-btn {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .uni-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .uni-logo {
+        height: 80px;
+    }
+
+    .uni-details {
+        align-items: center;
+    }
+}
